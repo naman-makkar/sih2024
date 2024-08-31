@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Menu } from "lucide-react";
@@ -6,20 +5,21 @@ import Carousel from "./Carousel";
 
 const Header = () => {
   return (
-    <header className="bg-gradient-to-r from-sky-200 to-indigo-200 shadow-md">
+    <header className="bg-gradient-to-r from-sky-200 to-indigo-100 shadow-md relative">
       <div className="container mx-auto py-6 px-4">
         {/* Logo and Heading */}
-        <div className="flex justify-center items-center mb-6">
+        <div className="flex items-center mb-6">
+          {/* Logo on the extreme left */}
           <img
-            src="/api/placeholder/100/100"
+            src="img8.jpeg"
             alt="Government of India Logo"
-            className="w-24 h-24 mr-6"
+            className="w-24 h-24"
           />
-          <div className="text-center">
+
+          {/* Heading expanded to full page width */}
+          <div className="flex-grow text-center">
             <h1 className="text-4xl font-bold text-blue-800 leading-tight">
-              National Scholarship Portal
-              <br />
-              for PMSSS
+              National Scholarship Portal for PMSSS
             </h1>
             <p className="text-lg text-blue-700 opacity-90 mt-2">
               Government of India
@@ -35,7 +35,7 @@ const Header = () => {
           <div className="container mx-auto px-4">
             <ul className="flex flex-wrap justify-center">
               {[
-                
+                // { to: "/main", label: "Home" },
                 { to: "/AboutUs", label: "About Us" },
                 { to: "/profile", label: "Profile" },
                 { to: "/login", label: "Login" },
@@ -56,13 +56,6 @@ const Header = () => {
             </ul>
           </div>
         </nav>
-      </div>
-
-      {/* Mobile menu button - only visible on small screens */}
-      <div className="lg:hidden absolute top-6 right-6">
-        <button className="text-blue-800 p-2 rounded-full bg-white bg-opacity-40 hover:bg-opacity-50 transition duration-300">
-          <Menu size={24} />
-        </button>
       </div>
     </header>
   );
