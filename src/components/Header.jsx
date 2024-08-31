@@ -1,104 +1,4 @@
-// // Header.js
-// import React from "react";
-// import { Link } from "react-router-dom"; // Import Link for routing
-// import { Search, Menu } from "lucide-react"; // Use only necessary icons
-// import Carousel from "./Carousel";
 
-// const Header = () => {
-//   return (
-//     <header className="bg-white shadow-md">
-//       {/* Main header */}
-//       <div className="container mx-auto py-4 px-4">
-//         {/* Logo and Heading */}
-//         <div className="flex justify-center items-center mb-4">
-//           <img
-//             src="/img8.jpeg"
-//             alt="Government of India Logo"
-//             className="w-32 h-22 mr-4"
-//           />
-//           <div className="text-center">
-//             <h1 className="text-4xl font-bold text-blue-900">
-//               National Scholarship Portal for PMSSS
-//             </h1>
-//             <p className="text-sm text-gray-600">Government of India</p>
-//           </div>
-//         </div>
-//         <Carousel />
-//         {/* Navigation */}
-//         <nav className="bg-blue-900 text-white mt-5">
-//           <div className="container mx-auto px-4">
-//             <ul className="flex">
-//               <li className="group relative">
-//                 <Link to="/Home" className="block px-4 py-3 hover:bg-blue-800">
-//                   Home
-//                 </Link>
-//               </li>
-//               <li className="group relative">
-//                 <Link
-//                   to="/AboutUs"
-//                   className="block px-4 py-3 hover:bg-blue-800"
-//                 >
-//                   About Us
-//                 </Link>
-//               </li>
-//               <li className="group relative">
-//                 <Link
-//                   to="/profile"
-//                   className="block px-4 py-3 hover:bg-blue-800"
-//                 >
-//                   Profile
-//                 </Link>
-//               </li>
-//               <li className="group relative">
-//                 <Link to="/login" className="block px-4 py-3 hover:bg-blue-800">
-//                   Login
-//                 </Link>
-//               </li>
-//               <li className="group relative">
-//                 <Link
-//                   to="/EligibilityCheck"
-//                   className="block px-4 py-3 hover:bg-blue-800"
-//                 >
-//                   EligibilityCheck
-//                 </Link>
-//               </li>
-//               <li className="group relative">
-//                 <Link
-//                   to="/upload"
-//                   className="block px-4 py-3 hover:bg-blue-800"
-//                 >
-//                   Upload Documents
-//                 </Link>
-//               </li>
-//               <li className="group relative">
-//                 <Link to="/track" className="block px-4 py-3 hover:bg-blue-800">
-//                   TrackApplication
-//                 </Link>
-//               </li>
-//               <li className="group relative">
-//                 <Link
-//                   to="/Dashboard"
-//                   className="block px-4 py-3 hover:bg-blue-800"
-//                 >
-//                   Dashboard
-//                 </Link>
-//               </li>
-//             </ul>
-//           </div>
-//         </nav>
-//       </div>
-
-//       {/* Mobile menu button - only visible on small screens */}
-//       <div className="lg:hidden absolute top-4 right-4">
-//         <button className="text-blue-900">
-//           <Menu size={24} />
-//         </button>
-//       </div>
-//     </header>
-//   );
-// };
-
-// export default Header;
 import React from "react";
 import { Link } from "react-router-dom";
 import { Menu } from "lucide-react";
@@ -135,7 +35,7 @@ const Header = () => {
           <div className="container mx-auto px-4">
             <ul className="flex flex-wrap justify-center">
               {[
-                { to: "/Home", label: "Home" },
+                
                 { to: "/AboutUs", label: "About Us" },
                 { to: "/profile", label: "Profile" },
                 { to: "/login", label: "Login" },
