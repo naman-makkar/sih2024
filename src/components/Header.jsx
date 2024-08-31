@@ -37,7 +37,7 @@ const Header = () => {
               {[
                 // { to: "/main", label: "Home" },
                 { to: "/AboutUs", label: "About Us" },
-                { to: "/profile", label: "Profile" },
+                { to: "/Scholar", label: "Scholar" },
                 { to: "/login", label: "Login" },
                 { to: "/EligibilityCheck", label: "Eligibility Check" },
                 { to: "/upload", label: "Upload Documents" },

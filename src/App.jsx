@@ -18,6 +18,7 @@ import Register from "./pages/Register";
 import Admin from "./pages/Admin";
 import ImageCarousel from "./components/Carousel";
 import Scholar from "./pages/Scholar";
+import Announcements from "./pages/Announcements";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<MainContent />} />
-
+        <Route path="Announcements" element={<Announcements />} />
         <Route path="/upload" element={<DocumentUpload />} />
         <Route path="/track" element={<TrackApp />} />
         <Route path="/profile" element={<Profile />} />
@@ -37,6 +38,16 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/admin" element={<Admin />} />
       </Routes>
+      <div className="fixed bottom-4 right-4 z-90">
+        <a
+          href="http://localhost:5000"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+        >
+          Chat with Bot
+        </a>
+      </div>
       <Footer />
     </Router>
   );

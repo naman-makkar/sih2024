@@ -73,10 +73,10 @@ const MainContent = () => {
               },
               {
                 icon: Bell,
-                title: "Notifications",
+                title: "Announcements",
                 description: "Stay updated with the latest announcements",
                 color: "bg-gradient-to-br from-red-400 to-red-600",
-                to: "/notifications",
+                to: "/Announcements",
               },
             ].map((item, index) => (
               <QuickLinkCard key={index} {...item} />

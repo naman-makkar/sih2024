@@ -1,6 +1,5 @@
 // export default Footer;
 import React from "react";
-import { Facebook, Instagram, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -13,18 +12,18 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-blue-500">
+                <a href="/" className="hover:text-blue-500">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500">
+                <a href="/AboutUs" className="hover:text-blue-500">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500">
-                  Scholarships
+                <a href="/Scholar" className="hover:text-blue-500">
+                  Scholar
                 </a>
               </li>
               <li>

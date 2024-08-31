@@ -1,0 +1,398 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "Hello", "Hey", "Good day", "What's up"],
+            "responses": [
+                "Hello! How can I assist you today? Here are some things you can ask about:",
+                "Hi there! What would you like to know today? You can ask me about the following topics:"
+            ],
+            "context": [""],
+            "menu_options": [
+                "1. Eligibility Criteria",
+                "2. Registration Process",
+                "3. Document Upload",
+                "4. Technical Issues",
+                "5. Scholarship Details",
+                "6. Counseling Process",
+                "7. Payment and Fees",
+                "8. Document Verification",
+                "9. Aadhaar Requirement"
+            ]
+        },
+        {
+            "tag": "eligibility_conditions",
+            "patterns": [
+                "What other conditions should I fulfill for PMSSS?",
+                "Are there any additional eligibility criteria?",
+                "What qualifications do I need?"
+            ],
+            "responses": [
+                "To be eligible for the scholarship, you must meet the following conditions:\n1. You should be a resident of India.\n2. Your family income should not exceed the specified limit as per the scholarship guidelines.\n3. You must have passed the 10+2 exam or its equivalent from a recognized board.\n4. If you are seeking admission directly in the second year of an engineering course, you must have passed a relevant diploma from a recognized institution."
+            ]
+        },
+        {
+            "tag": "registration_process",
+            "patterns": [
+                "How can I register for the scholarship?",
+                "What is the registration process?",
+                "How do I apply for the scholarship?"
+            ],
+            "responses": [
+                "To register for the scholarship, follow these steps:\n1. Visit the official scholarship portal.\n2. Go to the registration section and follow the instructions to create an account and complete the application."
+            ]
+        },
+        {
+            "tag": "technical_issues",
+            "patterns": [
+                "I am unable to register for the scholarship.",
+                "I'm facing technical issues during registration.",
+                "What should I do if I encounter technical problems while registering?"
+            ],
+            "responses": [
+                "If you're facing technical issues during registration, you can contact the support team via email or helpline for assistance. The contact details will be available on the official scholarship portal."
+            ]
+        },
+        {
+            "tag": "helpline",
+            "patterns": [
+                "Is there any helpline for scholarship queries?",
+                "Who can I contact for help?",
+                "Where can I get assistance with my queries?"
+            ],
+            "responses": [
+                "Yes, you can call the helpline number provided on the official scholarship portal or email your queries to the support team. The contact details are available on the portal."
+            ]
+        },
+        {
+            "tag": "required_documents",
+            "patterns": [
+                "Which documents do I need to upload after registration?",
+                "What documents are required for the scholarship?",
+                "What should I upload during the application?"
+            ],
+            "responses": [
+                "You need to upload the following documents when filling out the application:\n1. Self-attested scan copy of domicile certificate, SSC marksheet, family income certificate, Aadhaar card, and any caste/reservation/physically disabled certificates (if applicable).\n2. Other attachments include a passport-size photo, photos of your father/guardian or mother/guardian (if applicable), and your signature. Ensure all files are in the specified format and file size limit."
+            ]
+        },
+        {
+            "tag": "upload_issues",
+            "patterns": [
+                "I'm unable to upload photos and signatures on the portal.",
+                "Why can't I upload my documents?",
+                "What should I do if I can't upload photos and signatures?"
+            ],
+            "responses": [
+                "Make sure all documents to be uploaded are in .JPG/.PDF/.PNG format and that their file size is less than 2 MB."
+            ]
+        },
+        {
+            "tag": "post_application_steps",
+            "patterns": [
+                "I have submitted my online application form. What should I do next?",
+                "What do I do after submitting my application?",
+                "What are the next steps after applying?"
+            ],
+            "responses": [
+                "After submitting your online application, take a printout of the filled application and visit the nearest Facilitation-cum-Document Verification Centre (FDVC) along with the original documents and one set of their self-attested photocopies for verification. The details of the FDVCs will be provided on the AICTE website."
+            ]
+        },
+        {
+            "tag": "edit_application",
+            "patterns": [
+                "Can I edit my application after submission?",
+                "Is it possible to make changes to my application?",
+                "How do I correct my submitted application?"
+            ],
+            "responses": [
+                "Yes, you can edit your application by visiting the nearest Facilitation-cum-Document Verification Centre (FDVC). The Nodal Officer will assist you in editing the online application form after you produce the original documents supporting your request for editing. Ensure all entries, especially the Caste category, are correctly filled out and all supporting Certificates are loaded correctly in your presence at the FDVC. No further requests for changes will be allowed at any later stage by the AICTE."
+            ]
+        },
+        {
+            "tag": "fdvc_charges",
+            "patterns": [
+                "Will I be charged at the FDV Center?",
+                "Do I need to pay at the FDVC?",
+                "Is there any fee for document verification?"
+            ],
+            "responses": [
+                "No, document verification at the FDVC is free of cost, and you are not required to pay anything at the FDVC."
+            ]
+        },
+        {
+            "tag": "fdvc_necessity",
+            "patterns": [
+                "Is document verification at the FDVC necessary?",
+                "Do I have to visit the FDVC after applying?",
+                "Is it mandatory to verify my documents at FDVC?"
+            ],
+            "responses": [
+                "Yes, it is mandatory for all students who have registered on the AICTE Portal to visit the FDVC for document verification. Otherwise, you will not be eligible under the Scheme."
+            ]
+        },
+        {
+            "tag": "fdvc_location",
+            "patterns": [
+                "Which verification center should I go to for document verification?",
+                "Where can I verify my documents?",
+                "Where are the DVCs located?"
+            ],
+            "responses": [
+                "Document verification centers have been established across the country. The list is available on the scholarship portal. You can approach any DVC as per your convenience."
+            ]
+        },
+        {
+            "tag": "fdvc_document_collection",
+            "patterns": [
+                "Is there any document I should collect from the Facilitation Centre after the document verification process?",
+                "What should I collect after my documents are verified?",
+                "Do I need to take any documents from the FDVC?"
+            ],
+            "responses": [
+                "Yes, you must collect a stamped document verification report (Student Copy) from the FDVC. This report is necessary for further processing."
+            ]
+        },
+        {
+            "tag": "original_documents",
+            "patterns": [
+                "Are the original documents to be submitted at the facilitation center?",
+                "Do I need to submit my original documents at the FDVC?",
+                "Should I leave my original documents at the verification center?"
+            ],
+            "responses": [
+                "No, original documents are not to be submitted at the FDVC. The Nodal Officer will return all original documents after verification and retain only a copy of them."
+            ]
+        },
+        {
+            "tag": "engineering_eligibility",
+            "patterns": [
+                "I passed 10+2 in Commerce/Arts stream, am I eligible for Engineering?",
+                "Can I apply for Engineering with Commerce/Arts?",
+                "Is Engineering an option for Commerce/Arts students?"
+            ],
+            "responses": [
+                "Please check the eligibility criteria of the concerned course/institution/university before selecting a course. For admission to central universities, you must qualify for the Central Universities Entrance Test (CUET) conducted by the National Testing Agency (NTA)."
+            ]
+        },
+        {
+            "tag": "lateral_entry",
+            "patterns": [
+                "I have passed a diploma in engineering. Can I apply for lateral entry?",
+                "Am I eligible for lateral entry with a diploma?",
+                "Can I join engineering through lateral entry?"
+            ],
+            "responses": [
+                "Yes, candidates who want to take admission under the lateral entry scheme and have passed a diploma in engineering from a recognized institution are eligible. Admission under the lateral entry scheme will be subject to vacant seats available during the academic year in the engineering stream only. Students must opt for only engineering streams in which they are eligible. The institution/university may deny admission due to a wrong choice of branch/discipline filled by the student."
+            ]
+        },
+        {
+            "tag": "academic_fee_payment",
+            "patterns": [
+                "Who will pay the Academic fee?",
+                "How is the academic fee paid?",
+                "Who handles the tuition fees?"
+            ],
+            "responses": [
+                "The Academic fee is paid directly to the institution by AICTE on an annual basis."
+            ]
+        },
+        {
+            "tag": "maintenance_allowance",
+            "patterns": [
+                "Who will pay the Maintenance allowance?",
+                "How is the maintenance allowance paid?",
+                "Who handles the living expenses?"
+            ],
+            "responses": [
+                "The Maintenance allowance is paid directly to the student’s Aadhaar seeded account by AICTE. The disbursal is spread over the academic year."
+            ]
+        },
+        {
+            "tag": "aadhaar_requirement",
+            "patterns": [
+                "Is Aadhaar mandatory?",
+                "Do I need Aadhaar for this scholarship?",
+                "Can I apply without Aadhaar?"
+            ],
+            "responses": [
+                "Yes, it is mandatory for all students to have an Aadhaar number. You must ensure that your bank account is linked with Aadhaar for receiving the maintenance allowance."
+            ]
+        },
+        {
+            "tag": "bank_account",
+            "patterns": [
+                "My Aadhaar is not seeded with a bank account. Will I receive the scholarship?",
+                "Where will the scholarship be paid?",
+                "In which bank account will the maintenance allowance be disbursed?"
+            ],
+            "responses": [
+                "No, the scholarship will only be disbursed to an Aadhaar-seeded savings bank account. It is your responsibility to get the account seeded before joining the college to receive the scholarship in time. The Maintenance allowance will be disbursed into a Savings Bank Account seeded with your AADHAR Number and in your name only. Note that Bank Accounts should not be a 'No-frill Account', 'Minor Account', 'Parents’ Account', or a 'Non-Operative account'."
+            ]
+        },
+        {
+            "tag": "double_dipping",
+            "patterns": [
+                "Can I take the benefit of other scholarship schemes available for students along with Scheme?",
+                "Can I apply for multiple scholarships?",
+                "Is double-dipping allowed?"
+            ],
+            "responses": [
+                "No, double-dipping may lead to the cancellation of both scholarships. All credentials of the student will be verified on the National Scholarship Portal (NSP) of the Government of India for duplication. If any student is found availing of the benefit of any other Scheme, their application will be summarily rejected, and no further correspondence will be entertained."
+            ]
+        },
+        {
+            "tag": "counseling_mandatory",
+            "patterns": [
+                "Is attending online counseling mandatory for eligible students for availing benefits under the Scheme?",
+                "Do I have to attend counseling?",
+                "Is counseling required?"
+            ],
+            "responses": [
+                "Yes, after document verification, a list of provisionally eligible students will be displayed on the AICTE PMSSS website. All students must compulsorily attend online counseling to get course/college allotment. Multiple allotment rounds are conducted by AICTE based on the choice filled by the student, subject to availability of scholarships, purely on merit, and as per the reservation policy of the Government. Participation, however, is not mandatory if you wish to take admission on your own in Government institutions or any other prestigious Institutions/Universities offering admission based on Entrance Examinations like JEE, NEET, NATA, CLAT, CUET, etc., conducted by Govt. of India/State/UT Govt. However, you must submit admission details in the Entrance Examination Tab in the student login. The allotment will be made based on merit, reservation policy, and vacancies left after admissions are completed through counseling."
+            ]
+        },
+        {
+            "tag": "self_admission_eligibility",
+            "patterns": [
+                "I wish to pursue my studies in IIT/NIT/Institute of National Importance/Centrally funded Institutions programs/courses on my own without participating in PMSSS counseling Process 2022-23, am I eligible for scholarship?",
+                "Can I get a scholarship if I join a course on my own?",
+                "Is it possible to receive a scholarship without attending counseling?"
+            ],
+            "responses": [
+                "Students who qualify for entrance examinations conducted by the Central Govt. (NEET/JEE/CUET/NATA/CLAT) or who have taken admission in Government institutions are eligible for scholarships if they have registered themselves under the PMSSS scheme and are declared eligible by the FDVC upon document verification. They are required to submit admission details in the Entrance Examination Tab in the student's login. The allotment will be made based on merit, reservation policy, and vacancies left after admission through counseling."
+            ]
+        },
+        {
+            "tag": "medical_course_eligibility",
+            "patterns": [
+                "I wish to pursue MBBS/BDS/Medical etc., Am I eligible for scholarship?",
+                "Can I get a scholarship for medical courses?",
+                "Is NEET required for medical scholarships?"
+            ],
+            "responses": [
+                "Students taking admission in MBBS/BDS courses etc., are required to qualify for the NEET examination. Such students are eligible for scholarships only if they are registered under the scheme and are declared eligible by the Government. They are required to submit the NEET Scorecard, NEET Allotment Letter issued by the respective NEET Counseling Agency of the State/UT/Centre Government/Joining Report in the Entrance Examination Tab in the student login ID. Please note that AICTE does not conduct counseling for the Medical Stream, and all the medical seats are filled through 'on my own' admission after attending NEET Counseling conducted by the NEET Counseling Admission Authority of the respective State/UTs as the case may be only."
+            ]
+        },
+        {
+            "tag": "management_quota_eligibility",
+            "patterns": [
+                "I have taken admission under Management Quota, Am I eligible for scholarship?",
+                "Can I get a scholarship if I am in the management quota?",
+                "Does management quota affect my eligibility?"
+            ],
+            "responses": [
+                "Students taking admission under Management Quota are not eligible for a scholarship as per the Scheme Guidelines."
+            ]
+        },
+        {
+            "tag": "college_allotment",
+            "patterns": [
+                "How will I get the college of my choice?",
+                "Can I choose my college?",
+                "How is the college assigned?"
+            ],
+            "responses": [
+                "The allotment will be done as per the choice filled by the candidate and based on the merit list, reservation policy of the State, and scheme guidelines. No change of college is allowed under the Scheme, so students must fill their choices carefully."
+            ]
+        },
+        {
+            "tag": "counseling_allotment",
+            "patterns": [
+                "During the counseling, I have been allotted a college, but it is not of my choice. What do I do?",
+                "Can I change my allotted college?",
+                "What are my options if I don't like my allotted college?"
+            ],
+            "responses": [
+                "Once a college/course is allotted through the online counseling process, you must choose one of the three options by clicking the appropriate button:\n- Freeze: This means you accept the seat allotted.\n- Float: This means you are not interested in the seat allotted and want to participate in the next round of counseling. By clicking this, you confirm that you will have no claim on the seat allotted in the current round.\n- Not interested: This means you wish to opt-out of the counseling process and will be deregistered from the portal.\nNote: If the float option is selected, showing your seat allotment of the 1st round is not admissible."
+            ]
+        },
+        {
+            "tag": "post_allotment_steps",
+            "patterns": [
+                "I have selected the freeze option. What is the next step?",
+                "What do I do after freezing my seat?",
+                "What are the next steps after seat allotment?"
+            ],
+            "responses": [
+                "Candidates must immediately download the provisional allotment letter along with the Welcome Letter of the Institute. You should connect with the Nodal Officer/Mentor for additional guidance, following which you must complete the joining process."
+            ]
+        },
+        {
+            "tag": "joining_process",
+            "patterns": [
+                "What is the Joining process?",
+                "How do I join the allotted college?",
+                "What are the steps to join after allotment?"
+            ],
+            "responses": [
+                "The student must join the allotted college physically, which involves completing the joining formalities on the portal before the last date of joining mentioned in the calendar of events available on the AICTE JKPMSSS website. The Joining process involves uploading documents such as Transfer/Migration Certificate, Character Certificate, 10th Class Passing Certificate, 10+2 class Passing Certificate, 10th Class Marksheet, and 10+2 Marksheet. The joining documents will be verified by the Institute, and the Joining Report will be uploaded for the student."
+            ]
+        },
+        {
+            "tag": "own_admission_joining",
+            "patterns": [
+                "I have been given admission 'in my own category' based on submission of documents in the Entrance Examination tab. Do I need to complete the joining process?",
+                "Do I need to join if I got admission on my own?",
+                "Is joining required for self-admission?"
+            ],
+            "responses": [
+                "No, students allotted under the 'on my own' category are not required to complete the joining formalities as they have already done this step."
+            ]
+        },
+        {
+            "tag": "non_aicte_admission",
+            "patterns": [
+                "I have taken admission in a college 'on my own' and not through AICTE Counseling on a merit basis. How can I avail the scholarship?",
+                "Can I get a scholarship if I joined a college outside AICTE counseling?",
+                "Is it possible to receive the scholarship without AICTE counseling?"
+            ],
+            "responses": [
+                "You are not eligible if you have not registered on the portal. Students who qualify for entrance examinations conducted by the Central Govt./State Govt. (NEET/JEE/CUET/NATA/CLAT) or who have taken admission in Government institutions are eligible for scholarships, only if:\n1. They have registered themselves under the PMSSS scheme\n2. They are declared eligible by the FDV Center.\nYou must submit your admission-related documents in the entrance examination tab in the student login, which will be verified. The allotment will be based on merit, reservation policy, and vacancies left after admission through counseling."
+            ]
+        },
+        {
+            "tag": "own_category_scholarship",
+            "patterns": [
+                "I have registered to seek a scholarship under the 'on my own' category. Can I rest assured of a scholarship?",
+                "Am I guaranteed a scholarship under the own category?",
+                "Is the scholarship confirmed under the own category?"
+            ],
+            "responses": [
+                "Eligible students are considered for a scholarship only against the vacancies left after admissions through AICTE counseling. So they have to wait for the scholarship to be confirmed."
+            ]
+        },
+        {
+            "tag": "scholarship_cancellation",
+            "patterns": [
+                "I had taken admission based on AICTE counseling and taken a scholarship also. But due to some circumstances, I could not continue with the course. Am I eligible to apply this year?",
+                "Can I reapply for a scholarship if I dropped out last year?",
+                "Is it possible to get the scholarship again if I discontinued my course?"
+            ],
+            "responses": [
+                "No, you are not eligible as you have already availed the scholarship through PMSSS. Such students are only considered in subsequent years if they have canceled their admission well in advance before the commencement of the registration process and have not availed any amount through the scheme."
+            ]
+        },
+        {
+            "tag": "additional_ug_degree",
+            "patterns": [
+                "I have completed my UG course availing the scholarship. Can I apply for another UG degree and get a scholarship for that?",
+                "Can I get a second scholarship for another UG degree?",
+                "Is it possible to receive a scholarship for a second UG course?"
+            ],
+            "responses": [
+                "No, a student can avail of a scholarship under PMSSS only once as per the scheme guidelines."
+            ]
+        },
+        {
+            "tag": "ug_course_change",
+            "patterns": [
+                "I had taken admission in a UG course last year. Am I eligible to apply?",
+                "Can I apply again if I was admitted to a UG course last year?",
+                "Is it possible to switch courses and get a scholarship?"
+            ],
+            "responses": [
+                "Yes, you can apply for the scholarship after canceling your previous admission only if you meet the basic eligibility criteria and have not availed any other scholarship through the previous admission, including PMSSS."
+            ]
+        }
+    ]
+}
