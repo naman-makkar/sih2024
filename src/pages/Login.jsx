@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { LockIcon, UserIcon, CalendarIcon } from "lucide-react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [captcha, setCaptcha] = useState(""); // Placeholder for captcha handling
@@ -52,14 +52,13 @@ const Login = () => {
       });
     }
   };
-  
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-50 to-indigo-100 p-6">
       <ToastContainer />
       <div className="w-full max-w-lg bg-white p-8 rounded-2xl shadow-xl border border-indigo-100">
         <h2 className="text-3xl font-bold mb-6 text-center text-indigo-800">
-          Welcome Back
+          22Welcome Back
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-6">
