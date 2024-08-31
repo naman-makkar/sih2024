@@ -12,7 +12,7 @@ const FormField = ({ label, id, type, options }) => (
     {type === "select" ? (
       <select
         id={id}
-        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+        className="w-full px-3 py-2 border border-gray-500 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 bg-white"
       >
         <option value="">Choose Your Option</option>
         {options.map((option, index) => (
@@ -25,7 +25,7 @@ const FormField = ({ label, id, type, options }) => (
       <input
         type={type}
         id={id}
-        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+        className="w-full px-3 py-2 border border-gray-500 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
       />
     )}
   </div>
@@ -85,32 +85,16 @@ const EligibilityCheck = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Fetch values from the form
-    const selectedState = document.getElementById("domicileState").value;
-    const gender = document.getElementById("gender").value;
-    const community = document.getElementById("community").value;
-    const percentage = document.getElementById("previousClassPercentage").value;
-    const religion = document.getElementById("religion").value;
-    const isDisabled = document.getElementById("isDisabled").value;
     const parentsNotAlive = document.getElementById("parentsNotAlive").value;
-    const scholarshipCategory = document.getElementById(
-      "scholarshipCategory"
-    ).value;
+    const percentage = parseFloat(
+      document.getElementById("previousClassPercentage").value
+    );
+    const isDisabled = document.getElementById("isDisabled").value;
 
-    // Eligibility check conditions
     if (
-      isDisabled === "Yes" ||
       parentsNotAlive !== "Not Applicable" ||
-      parseInt(percentage) > 90 ||
-      (selectedState !== "" &&
-        gender === "Female" &&
-        maritalStatus === "Unmarried" &&
-        community !== "General" &&
-        parseInt(percentage) > 60 &&
-        religion !== "" &&
-        isDisabled === "No" &&
-        parentsNotAlive !== "Not Applicable" &&
-        scholarshipCategory === "Post Matric")
+      percentage >= 90 ||
+      isDisabled === "Yes"
     ) {
       setEligibilityStatus("Accepted");
     } else {
@@ -119,13 +103,15 @@ const EligibilityCheck = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h2 className="text-2xl font-bold mb-6">Check Your Eligibility</h2>
+    <div className="container mx-auto px-4 py-8 bg-gray-100 min-h-screen">
+      <h2 className="text-3xl font-bold mb-6 text-center text-indigo-700">
+        Check Your Scholarship Eligibility
+      </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Grid 1: Eligibility Form */}
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <form onSubmit={handleSubmit}>
+        <div className="bg-white p-6 rounded-lg shadow-lg border border-indigo-200">
+          <form onSubmit={handleSubmit} className="space-y-4">
             <FormField
               label="Domicile State/UT"
               id="domicileState"
@@ -269,7 +255,7 @@ const EligibilityCheck = () => {
 
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 mt-4"
+              className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 mt-4 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
             >
               Check Eligibility
             </button>
@@ -281,39 +267,45 @@ const EligibilityCheck = () => {
                   eligibilityStatus === "Accepted"
                     ? "bg-green-500"
                     : "bg-red-500"
-                }`}
+                } transition-all duration-300 ease-in-out`}
               >
-                {eligibilityStatus}
+                {eligibilityStatus === "Accepted"
+                  ? "Congratulations! You are eligible for the scholarship."
+                  : "We're sorry, but you are not eligible for the scholarship at this time."}
               </div>
             )}
           </form>
         </div>
 
         {/* Grid 2: Instructions */}
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-xl font-semibold mb-4">
+        <div className="bg-white p-6 rounded-lg shadow-lg border border-indigo-200">
+          <h3 className="text-2xl font-semibold mb-4 text-indigo-700">
             Instructions For Checking Scholarship Eligibility
           </h3>
-          <p className="mb-4">
+          <p className="mb-4 text-gray-700">
             Welcome to the Scholarship Eligibility Checker! Please follow the
             instructions below to determine which scholarship schemes you are
             eligible for before starting the application process.
           </p>
-          <ul className="list-disc pl-5 space-y-2">
+          <ul className="list-disc pl-5 space-y-2 text-gray-700">
             <li>Fill in all the required fields accurately.</li>
             <li>Double-check your entries to ensure there are no errors.</li>
-
             <li>
               This tool is designed to save your time by showing only the
               scholarships you are eligible for based on the information
               provided.
             </li>
+            <li>You will be eligible for the scholarship if:</li>
+            <ul className="list-circle pl-5 space-y-1 text-indigo-600">
+              <li>Your parents are not alive, or</li>
+              <li>Your previous class percentage is 90% or above, or</li>
+              <li>You are a person with disability</li>
+            </ul>
             <li>
               If you find yourself ineligible for any scholarships, consider
-              revisiting your details to ensure they are correct
+              revisiting your details to ensure they are correct.
             </li>
-            <li>View eligible scholarship schemes</li>
-
+            <li>View eligible scholarship schemes.</li>
             <li>
               Read the guidelines thoroughly to understand the application
               process and required documents.
