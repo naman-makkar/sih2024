@@ -36,13 +36,14 @@ const Header = () => {
             <ul className="flex flex-wrap justify-center">
               {[
                 // { to: "/main", label: "Home" },
-                { to: "/AboutUs", label: "About Us" },
-                { to: "/Scholar", label: "Scholar" },
+
                 { to: "/login", label: "Login" },
                 { to: "/EligibilityCheck", label: "Eligibility Check" },
+                { to: "/Scholarship", label: "Scholarship" },
                 { to: "/upload", label: "Upload Documents" },
                 { to: "/track", label: "Track Application" },
                 { to: "/Dashboard", label: "Dashboard" },
+                { to: "/AboutUs", label: "About Us" },
               ].map((item, index) => (
                 <li key={index} className="group relative">
                   <Link

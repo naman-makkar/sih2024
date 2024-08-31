@@ -54,7 +54,7 @@ const MainContent = () => {
                 title: "For Students",
                 description: "Discover eligibility and application processes",
                 color: "bg-gradient-to-br from-green-400 to-green-600",
-                to: "/profile",
+                to: "/Login",
               },
               {
                 icon: Users,
