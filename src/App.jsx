@@ -17,6 +17,7 @@ import Footer from "./components/Footer";
 import Register from "./pages/Register";
 import Admin from "./pages/Admin";
 import ImageCarousel from "./components/Carousel";
+import Scholar from "./pages/Scholar";
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/login" element={<Login />} />
         <Route path="/for-students" element={<Profile />} />
-
+        <Route path="/Scholar" element={<Scholar />} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/EligibilityCheck" element={<EligibilityCheck />} />
         <Route path="/register" element={<Register />} />

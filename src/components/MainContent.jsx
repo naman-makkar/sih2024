@@ -69,7 +69,7 @@ const MainContent = () => {
                 title: "Scholarships",
                 description: "Explore various scholarship schemes available",
                 color: "bg-gradient-to-br from-purple-400 to-purple-600",
-                to: "/scholarships",
+                to: "/Scholar",
               },
               {
                 icon: Bell,
