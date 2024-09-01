@@ -36,12 +36,13 @@ const Header = () => {
             <ul className="flex flex-wrap justify-center">
               {[
                 // { to: "/main", label: "Home" },
-                { to: "/admin", label: "Admin" },
+
                 { to: "/login", label: "Login" },
                 { to: "/EligibilityCheck", label: "Eligibility Check" },
                 { to: "/Scholarship", label: "Scholarship" },
                 { to: "/upload", label: "Upload Documents" },
                 { to: "/track", label: "Track Application" },
+                { to: "/admin", label: "Admin" },
                 { to: "/AdminDashboard", label: "Admin Dashboard" },
                 { to: "/AboutUs", label: "About Us" },
               ].map((item, index) => (
