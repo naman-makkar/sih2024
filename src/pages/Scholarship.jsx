@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 // Simple custom components
 const Card = ({ children, className }) => (
@@ -267,7 +268,9 @@ const SchemeFilter = () => {
                     ))}
                   </ul>
                   <div className="mt-4 flex justify-between">
-                    <Button>Apply Now</Button>
+                  <Link className="text-blue-500" to="/apply">
+    <button>Apply Now</button>
+</Link>
                     <Button variant="link">View Details</Button>
                   </div>
                 </CardContent>

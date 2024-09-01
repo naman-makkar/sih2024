@@ -20,6 +20,7 @@ import ImageCarousel from "./components/Carousel";
 import Scholarship from "./pages/Scholarship";
 import Announcements from "./pages/Announcements";
 import AboutPage from "./pages/AboutUs";
+import ScholarshipApplication from "./pages/apply";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/AboutUs" element={<AboutPage />} />
+        <Route path="/apply" element={<ScholarshipApplication />} />
       </Routes>
       <div className="fixed bottom-4 right-4 z-90">
         <a
