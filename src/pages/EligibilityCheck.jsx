@@ -92,9 +92,11 @@ const EligibilityCheck = () => {
     const isDisabled = document.getElementById("isDisabled").value;
 
     if (
-      parentsNotAlive !== "Not Applicable" ||
       percentage >= 90 ||
-      isDisabled === "Yes"
+      isDisabled === "Yes" ||
+      parentsNotAlive === "Father or Mother or Both Martyr (Saheed)" ||
+      parentsNotAlive === "Mother or Father or Both died due to COVID-19" ||
+      parentsNotAlive === "Orphan"
     ) {
       setEligibilityStatus("Accepted");
     } else {
