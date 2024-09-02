@@ -20,7 +20,7 @@ import ImageCarousel from "./components/Carousel";
 import Scholarship from "./pages/Scholarship";
 import Announcements from "./pages/Announcements";
 import AboutPage from "./pages/AboutUs";
-import ScholarshipApplication from "./pages/apply";
+import ScholarshipApplication from "./pages/Apply";
 
 function App() {
   return (
