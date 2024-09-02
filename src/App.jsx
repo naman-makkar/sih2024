@@ -10,7 +10,7 @@ import Profile from "./pages/Profile";
 import Login from "./pages/Login";
 import TrackApp from "./pages/TrackApp";
 import Dashboard from "./pages/Dashboard";
-import MainContent from "./components/Maincontent";
+import MainContent from "./components/MainContent";
 import EligibilityCheck from "./pages/EligibilityCheck";
 
 import Footer from "./components/Footer";
