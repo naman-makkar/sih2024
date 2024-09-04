@@ -18,9 +18,12 @@ const Header = () => {
 
           {/* Heading expanded to full page width */}
           <div className="flex-grow text-center">
-            <h1 className="text-4xl font-bold text-blue-800 leading-tight">
+            <a
+              href="/"
+              className="text-4xl font-bold text-blue-800 leading-tight hover:underline"
+            >
               National Scholarship Portal for PMSSS
-            </h1>
+            </a>
             <p className="text-lg text-blue-700 opacity-90 mt-2">
               Government of India
             </p>
