@@ -10,7 +10,7 @@ import Profile from "./pages/Profile";
 import Login from "./pages/Login";
 import TrackApp from "./pages/TrackApp";
 import Dashboard from "./pages/Dashboard";
-import MainContent from "./components/Maincontent";
+import MainContent from "./components/MainContent";
 import EligibilityCheck from "./pages/EligibilityCheck";
 
 import Footer from "./components/Footer";
@@ -20,7 +20,7 @@ import ImageCarousel from "./components/Carousel";
 import Scholarship from "./pages/Scholarship";
 import Announcements from "./pages/Announcements";
 import AboutPage from "./pages/AboutUs";
-import ScholarshipApplication from "./pages/apply";
+import ScholarshipApplication from "./pages/Apply";
 
 function App() {
   return (
